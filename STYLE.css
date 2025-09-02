@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background:  #00f2fe;
+}
+header {
+  /*background: linear-gradient(to right, #1c768f, #00f2fe);*/
+  color: #330066;
+  padding: 10px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin: 0 10px;
+}
+.nav-links a {
+  background: white;
+  color: #330066;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*Hero Section */
+.hero {
+  background: linear-gradient(to right, #330066, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 span {
+  color: yellow;
+}
+.btn {
+  background: white;
+  color: #330066;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/*About Section*/
+
+.about {
+  background: linear-gradient(to right, #330066, #00f2fe);
+  color: #7093ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+
+
+/*Cirtificates Section*/
+
+.cirtificate {
+  padding: 40px 20px;
+  /*background: linear-gradient(to right, #1c768f, #00f2fe);*/
+  text-align: center;
+}
+
+.cirtificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cirtificate-card {
+  background: #fa991c; 
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.cirtificate-card:hover {
+  transform: scale(1.05);
+}
+
+/*Resume Section*/
+.Resume {
+  padding: 10px 20px;
+  /*background: linear-gradient(to right, #1c768f, #00f2fe);*/
+  text-align: center;
+}
+
+.Resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px));
+  gap: 20px;
+}
+
+.Resume-card {
+  background: #fa991c;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.Resume-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+/*Responsive Navbar*/
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .nav links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
